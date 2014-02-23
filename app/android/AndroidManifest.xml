@@ -56,7 +56,7 @@
     	
         <provider
         	android:name=".SearchContentProvider"
-        	android:authorities="com.rocketteam.locator">
+        	android:authorities="com.rocketteam.locator.searchcontentprovider">
 		</provider>
     </application>
 

@@ -12,7 +12,7 @@ public class SearchSiteActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-	    setContentView(R.layout.search);
+	    //setContentView(R.layout.search);
 		
 		Intent intent = getIntent();
 	    if (Intent.ACTION_SEARCH.equals(intent.getAction())) {

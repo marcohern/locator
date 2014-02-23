@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -20,6 +22,31 @@ public class MainActivity extends Activity {
         ListView left = (ListView)findViewById(R.id.left_drawer);
         createRowListView(left);
         LocatorTestData.init();
+    }
+    
+    @Override
+    protected void onStart() {
+    	// TODO Auto-generated method stub
+    	super.onStart();
+        
+        DummyAsyncTask dat = new DummyAsyncTask(this);
+        try {
+        	dat.execute("this is a test");
+        } catch(Exception ex) {
+        	dat.cancel(true);
+
+        	AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        	builder.setMessage(ex.getMessage());
+        	builder.setTitle("Error");
+        	builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dialog, int id) {
+                    // User cancelled the dialog
+                	dialog.cancel();
+                }
+        	});
+        	AlertDialog dialog = builder.create();
+        	dialog.show();
+        }
     }
     
     protected void createSimpleTextListView(ListView lv) {
@@ -52,6 +79,7 @@ public class MainActivity extends Activity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
 
+        
         return true;
     }
     
