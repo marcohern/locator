@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Locator</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="search">Search</string>
+    <string name="description">Description</string>
+    <string name="title">Title</string>
+    
+    <string name="title_activity_preferences">Preferences</string>
+    
+    
+    <string name="pref_facebook_login">Facebook Login</string>
+    <string name="pref_facebook_login_summ">Facebook Login Description</string>
+    <string name="pref_language">Language</string>
+    <string name="pref_language_title">Language Dialog</string>
+    <string name="pref_language_default">SYSTEM</string>
+    
+    <string name="search_hint">Search for a site</string>
+    
+    
+</resources>
