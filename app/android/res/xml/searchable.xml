@@ -3,7 +3,7 @@
     android:label="@string/app_name"
     android:hint="@string/search_hint"
     android:searchSuggestAuthority="com.rocketteam.locator.searchcontentprovider"
-    android:searchSuggestIntentAction="android.Intent.action.VIEW"
+    android:searchSuggestIntentAction="android.intent.action.VIEW"
     android:searchSuggestIntentData="com.rocketteam.locator.searchcontentprovider/locator">
 
 </searchable>

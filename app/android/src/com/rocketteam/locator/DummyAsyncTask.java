@@ -1,13 +1,11 @@
 package com.rocketteam.locator;
 
 import android.app.ProgressDialog;
-import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
 
 public class DummyAsyncTask extends AsyncTask<String, Integer, String> {
 
-	private Context context;
 	private MainActivity activity;
 	private ProgressDialog progressDialog;
 	private static final String logTag = "DummyAsyncTask";
@@ -15,7 +13,6 @@ public class DummyAsyncTask extends AsyncTask<String, Integer, String> {
 	public DummyAsyncTask(MainActivity activity){
 		super();
 		this.activity = activity;
-		this.context = activity.getApplicationContext();
 		Log.w(logTag, "DummyAsyncTask");
 	}
 	
