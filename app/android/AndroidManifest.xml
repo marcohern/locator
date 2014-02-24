@@ -31,6 +31,16 @@
     	<!-- Include Google Play Services Version -->
         <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
     	
+        <activity
+            android:name="com.rocketteam.locator.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
     	<activity android:name="com.rocketteam.locator.SearchSiteActivity" >
 	        <intent-filter>
 	            <action android:name="android.intent.action.SEARCH" />
@@ -41,10 +51,6 @@
         
         <activity android:name="com.rocketteam.locator.MainActivity" android:label="@string/app_name" >
             <meta-data android:name="android.app.default_searchable" android:value=".SearchSiteActivity" />
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         
         <activity android:name="com.rocketteam.locator.LocatorPreferenceActivity"

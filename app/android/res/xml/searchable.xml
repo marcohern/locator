@@ -4,6 +4,7 @@
     android:hint="@string/search_hint"
     android:searchSuggestAuthority="com.rocketteam.locator.searchcontentprovider"
     android:searchSuggestIntentAction="android.intent.action.VIEW"
-    android:searchSuggestIntentData="com.rocketteam.locator.searchcontentprovider/locator">
+    android:searchSuggestIntentData="com.rocketteam.locator.searchcontentprovider/locator/#"
+    android:searchSuggestThreshold="2">
 
 </searchable>
