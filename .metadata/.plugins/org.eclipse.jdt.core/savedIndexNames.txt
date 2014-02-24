@@ -1,15 +1,10 @@
 INDEX VERSION 1.126+/Users/marcoh/Development/locator/.metadata/.plugins/org.eclipse.jdt.core
 2607433705.index
-2483820976.index
 486493441.index
-1415693123.index
 3739338338.index
-1843607326.index
 3390528919.index
-3739062521.index
 2949846482.index
 97288679.index
 3926743870.index
 2512203050.index
-2627816664.index
 2396950655.index
