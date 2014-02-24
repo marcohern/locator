@@ -2,6 +2,8 @@ package com.rocketteam.locator;
 
 import java.util.ArrayList;
 
+import com.rocketteam.locator.models.SiteIndex;
+
 public class LocatorTestData {
 	private static final ArrayList<SiteIndex> siteIndex = new ArrayList<SiteIndex>();
 	

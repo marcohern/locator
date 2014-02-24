@@ -3,6 +3,8 @@ package com.rocketteam.locator;
 import java.util.ArrayList;
 import java.util.Locale;
 
+import com.rocketteam.locator.models.SiteIndex;
+
 import android.app.SearchManager;
 import android.content.ContentProvider;
 import android.content.ContentValues;

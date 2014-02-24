@@ -1,5 +1,7 @@
 package com.rocketteam.locator;
 
+import com.rocketteam.locator.activity.MainActivity;
+
 import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.util.Log;
@@ -33,7 +35,7 @@ public class DummyAsyncTask extends AsyncTask<String, Integer, String> {
 	protected String doInBackground(String... params) {
 		Log.w(logTag, "doInBackground");
 		try {
-			Thread.sleep(10000);
+			Thread.sleep(5000);
 		}catch(InterruptedException ex) {
 			
 		}
