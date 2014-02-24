@@ -27,3 +27,6 @@ proguard/
 *.ipr
 *.iws
 .idea/
+
+#Stupid files that GitHub did not ignore because it did not know any better
+.metadata/
