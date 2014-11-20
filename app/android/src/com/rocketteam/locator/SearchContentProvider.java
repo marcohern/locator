@@ -18,6 +18,7 @@ public class SearchContentProvider extends ContentProvider {
 			Uri.parse("com.rocketteam.locator.searchcontentprovider");
 
 	private static final int SUGGEST_QUERY = 1;
+	private static final int SITE_INDEX = 2;
 	
 	private static final UriMatcher sUriMatcher;
 
@@ -33,6 +34,7 @@ public class SearchContentProvider extends ContentProvider {
 	@Override
 	public String getType(Uri uri) {
 		switch(sUriMatcher.match(uri)) {
+		case SITE_INDEX:
 		case SUGGEST_QUERY: return CONTENT_URI.toString();
 		default: throw new IllegalArgumentException("Unsupported URI: " + uri);
 		}
@@ -64,6 +66,7 @@ public class SearchContentProvider extends ContentProvider {
 		int m = sUriMatcher.match(uri);
 
 		switch(m) {
+		case SITE_INDEX:
 		case SUGGEST_QUERY: return querySiteIndex(q);
 		default: return null;
 		}
